@@ -1138,6 +1138,8 @@ html {
     line-height: 1;
     text-decoration: none;
     transition: 0.3s;
+    font-size: 14px;
+    font-weight: 400;
 }
 .footer-links ul a:hover {
     color: #5d57f4;
