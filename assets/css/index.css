@@ -641,21 +641,27 @@ html {
     color: white;
     background-color: #4f4bdb;
     border-radius: 5px;
-}
-.portfolio-section .portfolio-card {
+    cursor: pointer;
+} 
+.portfolio-card {
     background-color: #ffffff;
     border-radius: 15px;
     overflow: hidden;
+    margin: 10px 0;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease-in-out;
 }
-.portfolio-section .portfolio-card .portfolio-image img{
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+}
+.portfolio-card .portfolio-image img{
     border-radius: 10px 10px 0 0;
 }
-.portfolio-section .portfolio-card .portfolio-content {
+.portfolio-card .portfolio-content {
     padding: 25px;
 }
-.portfolio-section .portfolio-card .portfolio-content .category {
+.portfolio-card .portfolio-content .category {
     font-size: 14px;
     color: #5d57f4;
     text-transform: uppercase;
@@ -664,15 +670,105 @@ html {
     display: block;
     margin-bottom: 10px;
 }
-.portfolio-section .portfolio-card .portfolio-content h3 {
+.portfolio-card .portfolio-content h3 {
     font-size: 20px;
     margin: 0 0 15px;
     font-weight: 600;
     transition: color 0.3s ease;
 }
-.portfolio-section .portfolio-card .portfolio-content p {
+.portfolio-card .portfolio-content h3:hover {
+    color: #5d57f4;
+}
+.portfolio-card .portfolio-content p {
     font-size: 15px;
     color: color-mix(in srgb, #212529, transparent 30%);
     margin: 0;
     line-height: 1.6;
+}
+
+/* //////////////////// pricing css ////////////////// */
+.pricing-section {
+    background-color: #f4f4f9;
+}
+.pricing-card {
+    height: 630px;
+    margin: 50px 0;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+.pricing-card .price {
+    margin-bottom: 24px;
+}
+.pricing-card.popular {
+    background: #5d57f4;
+    color: #ffffff;
+}
+.pricing-card .price .currency {
+    font-size: 24px;
+    font-weight: 600;
+    vertical-align: top;
+    line-height: 1;
+}
+.pricing-card .price .amount {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+}
+.pricing-card .price .period {
+    font-size: 16px;
+    color: color-mix(in srgb, #212529, transparent 40%);
+}
+.pricing-card.popular .price .currency, .pricing-card.popular .price .amount, .pricing-card.popular .price .period {
+    color: #ffff;
+}
+.pricing-card .description {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.pricing-card h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #32353a;
+}
+.pricing-card.popular h3, .pricing-card.popular h4 {
+    color: #ffff;
+}
+.pricing-card .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+}
+.pricing-card .features-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.pricing-card .features-list li i {
+    color: #5d57f4;
+    margin-right: 12px;
+    font-size: 20px;
+}
+.pricing-card.popular .features-list li i {
+    color: #ffff;
+}
+.pricing-card .btn {
+    width: 100%;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+}
+.pricing-card .btn.btn-primary {
+    background: #5d57f4;
+    border: none;
+    color: #ffffff;
+}
+.pricing-card.popular .btn-light {
+    background: #ffffff;
+    color: #5d57f4;
 }
