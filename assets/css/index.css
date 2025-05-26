@@ -624,3 +624,8 @@ html {
     background-color: #5d57f4;
     color: #ffff;
 }
+
+/* ////////////////// portfolio css //////////////////////  */
+.portfolio-section .text-main ul {
+    list-style: none;
+}
