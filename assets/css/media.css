@@ -343,4 +343,15 @@
         overflow: hidden;
         transition: all 0.3s ease;
     }
+
+    /* /////////// contact media /////////////  */
+    .footer-links h4 {
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        padding-top: 20px;
+        color: #32353a;
+    }
+
+
 }
