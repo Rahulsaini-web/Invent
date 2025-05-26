@@ -15,6 +15,25 @@
         window.scrollY > 90 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
     }
 
-    document.addEventListener('scroll', toggleScrolled);
-    window.addEventListener('load', toggleScrolled);
+        document.addEventListener('scroll', toggleScrolled);
+        window.addEventListener('load', toggleScrolled);
  
+    document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle, .faq-item .faq-header').forEach((faqItem) => {
+        faqItem.addEventListener('click', () => {
+        faqItem.parentNode.classList.toggle('faq-active');
+        });
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
