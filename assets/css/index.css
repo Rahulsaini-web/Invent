@@ -1139,6 +1139,9 @@ html {
     text-decoration: none;
     transition: 0.3s;
 }
+.footer-links ul a:hover {
+    color: #5d57f4;
+}
 .copyright {
     padding: 25px 0;
     border-top: 1px solid color-mix(in srgb, #212529, transparent 90%);
