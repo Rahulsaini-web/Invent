@@ -772,3 +772,9 @@ html {
     background: #ffffff;
     color: #5d57f4;
 }
+.pricing-card .btn.btn-primary:hover {
+    background: color-mix(in srgb, #5d57f4, transparent 15%);
+}
+.pricing-card.popular .btn-light:hover {
+    background: color-mix(in srgb, #ffffff, transparent 10%);
+}
